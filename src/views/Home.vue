@@ -9,28 +9,26 @@
     <subscribe />
 
     <social />
-    
   </div>
 </template>
 
 <script>
-import { Script } from 'vm';
-import code from '../../public/script/OrbitControls.js'
-import morecode from '../../public/script/Water.js'
-import stillmorecode from '../../public/script/Sky.js'
+    import bohotcode from "../../public/script/Sky.js";
+    import aurcode from "../../public/script/Water.js";
+    import baskar from "../../public/script/OrbitControls.js";
   export default {
     name: 'Home',
-
     components: {
       About: () => import('@/components/home/About'),
       Articles: () => import('@/components/home/Articles'),
       Banner: () => import('@/components/home/Banner'),
       Social: () => import('@/components/home/Social'),
       Subscribe: () => import('@/components/home/Subscribe'),
-    },   
+    },
+    
     data()
-    { 
-      if(WEBGL.isWebGLAvailable() === false){
+    {
+          if (WEBGL.isWebGLAvailable() === false) {
         document.body.appendChild(WEBGL.getWebGLErrorMessage());
       }
       var container, stats;
@@ -115,7 +113,6 @@ import stillmorecode from '../../public/script/Sky.js'
         updateSun();
         //
         var geometry = new THREE.IcosahedronBufferGeometry(20, 1);
-
         var count = geometry.attributes.position.count;
         var colors = [];
         var color = new THREE.Color();
@@ -145,6 +142,7 @@ import stillmorecode from '../../public/script/Sky.js'
         controls.minDistance = 40.0;
         controls.maxDistance = 200.0;
         controls.update();
+        //
         // stats = new Stats();
         // container.appendChild(stats.dom);
         // GUI
