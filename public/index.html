@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="<%= BASE_URL %>favicon.png" />
-    <title>Free Blog Theme — Vuetify</title>
-    <meta
-      name="description"
-      content="A Free Material Blog Theme built with Vuetify"
-    />
-    <meta
-      name="keywords"
-      content="blog theme, free theme, free vuetify theme"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css"
-    />
-
-    <style>
-      body {
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon type=image/png href=/favicon.png><title>Free Blog Theme — Vuetify</title><meta name=description content="A Free Material Blog Theme built with Vuetify"><meta name=keywords content="blog theme, free theme, free vuetify theme"><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"><link rel=stylesheet href=https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css><style>body {
         color: #000;
         font-family: Monospace;
         font-size: 13px;
@@ -37,35 +11,7 @@
         width: 100%;
         text-align: center;
         padding: 5px;
-      }
-    </style>
-  </head>
-  <body>
-    <noscript>
-      <strong
-        >We're sorry but theme-blog doesn't work properly without JavaScript
-        enabled. Please enable it to continue.</strong
-      >
-    </noscript>
-
-    <div id="container"></div>
-    <div id="info">
-      <a href="http://threejs.org" target="_blank" rel="noopener">three.js</a> -
-      webgl ocean
-    </div>
-
-    <script src="script/three.js"></script>
-
-    <script src="script/OrbitControls.js"></script>
-    <script src="script/Water.js"></script>
-    <script src="script/Sky.js"></script>
-
-    <script src="script/WebGL.js"></script>
-    <script src="script/stats.min.js"></script>
-    <script src="script/dat.gui.min.js"></script>
-
-    <script>
-      if (WEBGL.isWebGLAvailable() === false) {
+      }</style><link href=/css/chunk-068d05ee.e07e6964.css rel=prefetch><link href=/css/chunk-06f5aa60.c36b2319.css rel=prefetch><link href=/css/chunk-18aa1220.84dcae80.css rel=prefetch><link href=/css/chunk-1c47bdf8.1f1dfdcb.css rel=prefetch><link href=/css/chunk-31fe7b9f.c5c6210a.css rel=prefetch><link href=/css/chunk-3bdd3db5.c6f84704.css rel=prefetch><link href=/css/chunk-4a420a6a.c5c6210a.css rel=prefetch><link href=/css/chunk-4dfad4c8.e0784795.css rel=prefetch><link href=/css/chunk-54165ea1.8b567dab.css rel=prefetch><link href=/css/chunk-5ff24b51.dd6132cb.css rel=prefetch><link href=/css/chunk-6fe8e180.142b6b78.css rel=prefetch><link href=/css/chunk-7328a24a.9091d8c5.css rel=prefetch><link href=/css/chunk-afcd9f7a.2956ee9f.css rel=prefetch><link href=/css/chunk-b98e0342.bdbea74a.css rel=prefetch><link href=/css/chunk-f15ce246.4a273dd9.css rel=prefetch><link href=/js/chunk-068d05ee.3dce5b02.js rel=prefetch><link href=/js/chunk-06f5aa60.267a03de.js rel=prefetch><link href=/js/chunk-18aa1220.581f00a1.js rel=prefetch><link href=/js/chunk-1c47bdf8.2ffcd575.js rel=prefetch><link href=/js/chunk-2d0f0100.5a938a8e.js rel=prefetch><link href=/js/chunk-31fe7b9f.9b9ccc4c.js rel=prefetch><link href=/js/chunk-3bdd3db5.773b8ae6.js rel=prefetch><link href=/js/chunk-4a420a6a.9244544e.js rel=prefetch><link href=/js/chunk-4dfad4c8.6664fe77.js rel=prefetch><link href=/js/chunk-54165ea1.19bc2fdc.js rel=prefetch><link href=/js/chunk-5ff24b51.a9bf020d.js rel=prefetch><link href=/js/chunk-6fe8e180.6b4273cf.js rel=prefetch><link href=/js/chunk-7328a24a.453c9bef.js rel=prefetch><link href=/js/chunk-afcd9f7a.bb972838.js rel=prefetch><link href=/js/chunk-b98e0342.f2b39de3.js rel=prefetch><link href=/js/chunk-f15ce246.95e35291.js rel=prefetch><link href=/css/chunk-vendors.a95874fa.css rel=preload as=style><link href=/js/app.d25b2332.js rel=preload as=script><link href=/js/chunk-vendors.a470c769.js rel=preload as=script><link href=/css/chunk-vendors.a95874fa.css rel=stylesheet></head><body><noscript><strong>We're sorry but theme-blog doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=container></div><div id=info><a href=http://threejs.org target=_blank rel=noopener>three.js</a> - webgl ocean</div><script src=script/three.js></script><script src=script/OrbitControls.js></script><script src=script/Water.js></script><script src=script/Sky.js></script><script src=script/WebGL.js></script><script src=script/stats.min.js></script><script src=script/dat.gui.min.js></script><script>if (WEBGL.isWebGLAvailable() === false) {
         document.body.appendChild(WEBGL.getWebGLErrorMessage());
       }
       var container, stats;
@@ -219,10 +165,4 @@
         sphere.rotation.z = time * 0.51;
         water.material.uniforms["time"].value += 1.0 / 60.0;
         renderer.render(scene, camera);
-      }
-    </script>
-
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
-</html>
+      }</script><div id=app></div><script src=/js/chunk-vendors.a470c769.js></script><script src=/js/app.d25b2332.js></script></body></html>
